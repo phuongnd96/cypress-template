@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-07-10T02:38:28.145Z",
+    "end": "2020-07-10T02:38:36.327Z",
+    "duration": 8182,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c8b37c1d-0979-4a22-886b-c417fd3825ce",
+      "title": "",
+      "fullFile": "cypress/integration/login-seller-portal.feature",
+      "file": "cypress/integration/login-seller-portal.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "72d5ad9b-db0a-4844-8f45-0a1c147429f5",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login vào trang Seller",
+              "fullTitle": "Login Login vào trang Seller",
+              "timedOut": null,
+              "duration": 6256,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: expected 'https://seller.lionnix.com/sign-in' to equal 'https://seller.lionnix.com/'",
+                "estack": "AssertionError: Timed out retrying: expected 'https://seller.lionnix.com/sign-in' to equal 'https://seller.lionnix.com/'\n    at SellerLoginPage.verifyLoginSucces (https://seller.lionnix.com/__cypress/tests?p=cypress/integration/login-seller-portal.feature:49:16)\n    at Context.eval (https://seller.lionnix.com/__cypress/tests?p=cypress/integration/login-seller-portal.feature:113:13)\n    at Context.resolveAndRunStepDefinition (https://seller.lionnix.com/__cypress/tests?p=cypress/integration/login-seller-portal.feature:10509:9)\n    at Context.eval (https://seller.lionnix.com/__cypress/tests?p=cypress/integration/login-seller-portal.feature:9851:35)",
+                "diff": "- 'https://seller.lionnix.com/sign-in'\n+ 'https://seller.lionnix.com/'\n"
+              },
+              "uuid": "75aac5ad-8435-46c8-a0e8-46a4c2c7ee2d",
+              "parentUUID": "72d5ad9b-db0a-4844-8f45-0a1c147429f5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "75aac5ad-8435-46c8-a0e8-46a4c2c7ee2d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6256,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

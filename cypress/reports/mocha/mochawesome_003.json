@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-07-10T02:35:44.965Z",
+    "end": "2020-07-10T02:35:53.136Z",
+    "duration": 8171,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5b64620b-e09a-44e7-b174-6f5c9f653136",
+      "title": "",
+      "fullFile": "cypress/integration/login-seller-portal.feature",
+      "file": "cypress/integration/login-seller-portal.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "32b99793-d40d-4d37-874a-c284c507395f",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login vào trang Seller",
+              "fullTitle": "Login Login vào trang Seller",
+              "timedOut": null,
+              "duration": 6301,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: '#app > div.animsition.dashboard.site-menubar-unfold > nav > div.navbar-header > div > a > img' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: '#app > div.animsition.dashboard.site-menubar-unfold > nav > div.navbar-header > div > a > img' but never did.\n    at SellerLoginPage.verifyLoginSucces (https://seller.lionnix.com/__cypress/tests?p=cypress/integration/login-seller-portal.feature:49:116)\n    at Context.eval (https://seller.lionnix.com/__cypress/tests?p=cypress/integration/login-seller-portal.feature:113:13)\n    at Context.resolveAndRunStepDefinition (https://seller.lionnix.com/__cypress/tests?p=cypress/integration/login-seller-portal.feature:10509:9)\n    at Context.eval (https://seller.lionnix.com/__cypress/tests?p=cypress/integration/login-seller-portal.feature:9851:35)",
+                "diff": null
+              },
+              "uuid": "5d40eb6a-b773-417c-9115-626e308b58e6",
+              "parentUUID": "32b99793-d40d-4d37-874a-c284c507395f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5d40eb6a-b773-417c-9115-626e308b58e6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6301,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
